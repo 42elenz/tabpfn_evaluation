@@ -1,9 +1,10 @@
 
-*/00_data
+
 */catboost_info
 *.pkl
 ./00_NAKO/98_models/
 */98_models/
+*.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
