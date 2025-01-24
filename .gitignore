@@ -1,5 +1,5 @@
 
-
+*.zip
 */catboost_info
 *.pkl
 ./00_NAKO/98_models/
