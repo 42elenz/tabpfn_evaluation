@@ -380,8 +380,6 @@ for percentage in percentage_of_the_data:
                         'classification_reports': []
                 }
 
-                tab_pfn = TabPFNClassifier()
-
                 tabpfn_results = []
                 tabpfn_results_eval = []
                 lgb_results = []
@@ -480,7 +478,7 @@ for percentage in percentage_of_the_data:
                                 model_dict["mlp"] = mlpclf
                         clean_up_cuda(mlpclf)
 
-                        tabclf = TabPFNClassifier()
+                        tabclf = TabPFNClassifier(device="cpu")
                         tabclf.fit(X_train, y_train)
                         y_pred_proba = tabclf.predict_proba(X_test)
                         y_pred = tabclf.predict(X_test)
